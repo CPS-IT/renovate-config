@@ -1,0 +1,39 @@
+{
+	"name": "cpsit/renovate-config",
+	"description": "Ready-to-use configuration presets for projects managed with Renovate",
+	"license": "GPL-3.0-or-later",
+	"type": "library",
+	"authors": [
+		{
+			"name": "Elias Häußler",
+			"email": "e.haeussler@familie-redlich.de",
+			"homepage": "https://www.cps-it.de",
+			"role": "Maintainer"
+		}
+	],
+	"require-dev": {
+		"armin/editorconfig-cli": "^1.5",
+		"ergebnis/composer-normalize": "^2.37"
+	},
+	"config": {
+		"allow-plugins": {
+			"ergebnis/composer-normalize": true
+		},
+		"sort-packages": true
+	},
+	"scripts": {
+		"fix": [
+			"@fix:composer",
+			"@fix:editorconfig"
+		],
+		"fix:composer": "@composer normalize",
+		"fix:editorconfig": "@lint:editorconfig --fix",
+		"lint": [
+			"@lint:composer",
+			"@lint:editorconfig"
+		],
+		"lint:composer": "@fix:composer --dry-run",
+		"lint:editorconfig": "ec",
+		"validate-config": "docker-compose run --rm validate"
+	}
+}

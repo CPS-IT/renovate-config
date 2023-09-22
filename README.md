@@ -162,7 +162,7 @@ This project is licensed under [GNU General Public License 3.0 (or later)](LICEN
 
 [1]: https://github.com/renovatebot/renovate
 [2]: https://docs.renovatebot.com/config-presets/
-[3]: https://docs.renovatebot.com/config-presets/#self-hosted-git
+[3]: https://docs.renovatebot.com/config-presets/#github
 [4]: https://docs.renovatebot.com/presets-default/#separatepatchreleases
 [5]: https://docs.renovatebot.com/presets-default/#automergerequireallstatuschecks
 [6]: https://docs.renovatebot.com/presets-schedule/#scheduleweekdays

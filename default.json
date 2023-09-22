@@ -24,7 +24,6 @@
         "enabled": true,
         "commitMessageAction": "Update all dependencies"
     },
-    "onboardingRebaseCheckbox": true,
     "osvVulnerabilityAlerts": true,
     "packageRules": [
         {

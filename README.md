@@ -43,16 +43,17 @@ Consider using more specific presets in your projects since they might be better
 
 #### Key configuration
 
-| Configuration key                       | Value               | Description                                                                               |
-|-----------------------------------------|---------------------|-------------------------------------------------------------------------------------------|
-| [`:separatePatchReleases`][4]           | _Preset_            | Separate patch and minor releases into separate MRs                                       |
-| [`:automergeRequireAllStatusChecks`][5] | _Preset_            | Require successful CI for auto-merge                                                      |
-| [`schedule:weekdays`][6]                | _Preset_            | Schedule one Renovate run per weekday (triggered by renovate/renovate-runner>)            |
-| [`configMigration`][7]                  | `true`              | Enables migration of Renovate config on a repository basis                                |
-| [`lockFileMaintenance`][8]              | `{"enabled": true}` | Enable dependency updates of all locked dependencies, including transitive dependencies   |
-| [`osvVulnerabilityAlerts`][9]           | `true`              | Enable vulnerability alerts fetched from https://osv.dev                                  |
-| [`prConcurrentLimit`][10]               | `10`                | Limit concurrent MRs to 10                                                                |
-| [`labels`][11]                          | `["dependencies"]`  | Always add `dependencies` label to MRs                                                    |
+| Configuration key                       | Value               | Description                                                                             |
+|-----------------------------------------|---------------------|-----------------------------------------------------------------------------------------|
+| [`:separatePatchReleases`][4]           | _Preset_            | Separate patch and minor releases into separate MRs                                     |
+| [`:automergePatch`][14]                 | _Preset_            | Automerge patch upgrades if they pass tests                                             |
+| [`:automergeRequireAllStatusChecks`][5] | _Preset_            | Require successful CI for auto-merge                                                    |
+| [`schedule:weekdays`][6]                | _Preset_            | Schedule one Renovate run per weekday (triggered by renovate/renovate-runner>)          |
+| [`configMigration`][7]                  | `true`              | Enables migration of Renovate config on a repository basis                              |
+| [`lockFileMaintenance`][8]              | `{"enabled": true}` | Enable dependency updates of all locked dependencies, including transitive dependencies |
+| [`osvVulnerabilityAlerts`][9]           | `true`              | Enable vulnerability alerts fetched from https://osv.dev                                |
+| [`prConcurrentLimit`][10]               | `10`                | Limit concurrent MRs to 10                                                              |
+| [`labels`][11]                          | `["dependencies"]`  | Always add `dependencies` label to MRs                                                  |
 
 #### Package rules
 
@@ -173,4 +174,5 @@ This project is licensed under [GNU General Public License 3.0 (or later)](LICEN
 [11]: https://docs.renovatebot.com/configuration-options/#labels
 [12]: https://docs.renovatebot.com/configuration-options/#basebranches
 [13]: https://docs.renovatebot.com/configuration-options/#rangestrategy
+[14]: https://docs.renovatebot.com/presets-default/#automergepatch
 [99]: https://github.com/pagemachine/renovate-config

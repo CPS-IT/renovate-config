@@ -1,59 +1,59 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        ":separatePatchReleases",
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		":separatePatchReleases",
 		":automergePatch",
-        ":automergeRequireAllStatusChecks",
-        "config:recommended",
-        "mergeConfidence:all-badges",
-        "schedule:weekdays"
-    ],
-    "description": [
-        "This preset provides a solid base configuration for all projects developed at CPS GmbH.",
-        "Consider using more specific presets in your projects since they might be better suited."
-    ],
-    "commitBodyTable": true,
-    "commitMessageLowerCase": "never",
-    "commitMessagePrefix": "[TASK]",
-    "commitMessageTopic": "{{depName}}",
-    "composerIgnorePlatformReqs": null,
-    "configMigration": true,
-    "labels": [
-        "dependencies"
-    ],
-    "lockFileMaintenance": {
-        "enabled": true,
-        "commitMessageAction": "Update all dependencies"
-    },
+		":automergeRequireAllStatusChecks",
+		"config:recommended",
+		"mergeConfidence:all-badges",
+		"schedule:weekdays"
+	],
+	"description": [
+		"This preset provides a solid base configuration for all projects developed at CPS GmbH.",
+		"Consider using more specific presets in your projects since they might be better suited."
+	],
+	"commitBodyTable": true,
+	"commitMessageLowerCase": "never",
+	"commitMessagePrefix": "[TASK]",
+	"commitMessageTopic": "{{depName}}",
+	"composerIgnorePlatformReqs": null,
+	"configMigration": true,
+	"labels": [
+		"dependencies"
+	],
+	"lockFileMaintenance": {
+		"enabled": true,
+		"commitMessageAction": "Update all dependencies"
+	},
 	"onboardingPrTitle": "[TASK] Configure Renovate",
-    "osvVulnerabilityAlerts": true,
-    "packageRules": [
-        {
-            "matchDepTypes": [
-                "devDependencies",
-                "require-dev"
-            ],
-            "matchUpdateTypes": [
-                "minor",
-                "patch"
-            ],
-            "automerge": true
-        },
-        {
-            "matchPackagePrefixes": [
-                "phpstan/"
-            ],
-            "matchPackageNames": [
-                "jangregor/phpstan-prophecy",
-                "saschaegerer/phpstan-typo3"
-            ],
-            "groupName": "PHPStan"
-        }
-    ],
-    "prConcurrentLimit": 10,
-    "prHourlyLimit": 0,
-    "vulnerabilityAlerts": {
-        "commitMessagePrefix": "[SECURITY]",
-        "commitMessageSuffix": ""
-    }
+	"osvVulnerabilityAlerts": true,
+	"packageRules": [
+		{
+			"matchDepTypes": [
+				"devDependencies",
+				"require-dev"
+			],
+			"matchUpdateTypes": [
+				"minor",
+				"patch"
+			],
+			"automerge": true
+		},
+		{
+			"matchPackagePrefixes": [
+				"phpstan/"
+			],
+			"matchPackageNames": [
+				"jangregor/phpstan-prophecy",
+				"saschaegerer/phpstan-typo3"
+			],
+			"groupName": "PHPStan"
+		}
+	],
+	"prConcurrentLimit": 10,
+	"prHourlyLimit": 0,
+	"vulnerabilityAlerts": {
+		"commitMessagePrefix": "[SECURITY]",
+		"commitMessageSuffix": ""
+	}
 }

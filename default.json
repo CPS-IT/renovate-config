@@ -4,6 +4,7 @@
 		":separatePatchReleases",
 		":automergePatch",
 		":automergeRequireAllStatusChecks",
+		":semanticCommitsDisabled",
 		"config:recommended",
 		"mergeConfidence:all-badges",
 		"schedule:weekdays"

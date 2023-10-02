@@ -49,6 +49,16 @@
 				"saschaegerer/phpstan-typo3"
 			],
 			"groupName": "PHPStan"
+		},
+		{
+			"extends": [
+				":automergeDisabled"
+			],
+			"ignoreUnstable": false,
+			"matchPackageNames": [
+				"php"
+			],
+		    "rangeStrategy": "widen"
 		}
 	],
 	"prConcurrentLimit": 10,

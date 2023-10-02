@@ -61,6 +61,7 @@ Consider using more specific presets in your projects since they might be better
 |----------------------|-----------------------------------------|----------------------------------------------------------------------------------------|
 | Development packages | `devDependencies`, `require-dev`        | All packages used for development, updates in minor and patch range will be automerged |
 | PHPStan packages     | `phpstan/*`, various PHPStan extensions | PHPStan and extensions, will ge grouped as `PHPStan`                                   |
+| PHP version updates  | `php`                                   | PHP version will be widened and automerge is disabled                                  |
 
 ### Git Flow preset
 

@@ -6,6 +6,9 @@
     "composerIgnorePlatformReqs": [
         "ext-intl"
     ],
+	"lockFileMaintenance": {
+		"automerge": false
+	},
     "rangeStrategy": "in-range-only",
     "packageRules": [
         {

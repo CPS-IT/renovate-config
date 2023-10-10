@@ -44,7 +44,7 @@
 			"matchPackagePrefixes": [
 				"phpstan/"
 			],
-			"matchPackageNames": [
+			"matchDepNames": [
 				"jangregor/phpstan-prophecy",
 				"saschaegerer/phpstan-typo3"
 			],
@@ -55,7 +55,7 @@
 				":automergeDisabled"
 			],
 			"ignoreUnstable": false,
-			"matchPackageNames": [
+			"matchDepNames": [
 				"php"
 			],
 		    "rangeStrategy": "widen"

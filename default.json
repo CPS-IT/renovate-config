@@ -58,7 +58,7 @@
 			"matchDepNames": [
 				"php"
 			],
-		    "rangeStrategy": "widen"
+			"rangeStrategy": "widen"
 		}
 	],
 	"prConcurrentLimit": 10,

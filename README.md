@@ -57,11 +57,12 @@ Consider using more specific presets in your projects since they might be better
 
 #### Package rules
 
-| Ruleset              | Matching packages                       | Description                                                                            |
-|----------------------|-----------------------------------------|----------------------------------------------------------------------------------------|
-| Development packages | `devDependencies`, `require-dev`        | All packages used for development, updates in minor and patch range will be automerged |
-| PHPStan packages     | `phpstan/*`, various PHPStan extensions | PHPStan and extensions, will ge grouped as `PHPStan`                                   |
-| PHP version updates  | `php`                                   | PHP version will be widened and automerge is disabled                                  |
+| Ruleset                 | Matching packages                       | Description                                                                            |
+|-------------------------|-----------------------------------------|----------------------------------------------------------------------------------------|
+| Development packages    | `devDependencies`, `require-dev`        | All packages used for development, updates in minor and patch range will be automerged |
+| PHPStan packages        | `phpstan/*`, various PHPStan extensions | PHPStan and extensions, will ge grouped as `PHPStan`                                   |
+| PHP version updates     | `php`                                   | PHP version will be widened and automerge is disabled                                  |
+| GitHub artifact actions | `actions/*-artifact`                    | GitHub actions to upload and download artifacts are grouped to a single PR             |
 
 ### Git Flow preset
 

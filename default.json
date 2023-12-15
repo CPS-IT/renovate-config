@@ -59,6 +59,13 @@
 				"php"
 			],
 			"rangeStrategy": "widen"
+		},
+		{
+			"matchDepNames": [
+				"actions/download-artifact",
+				"actions/upload-artifact"
+			],
+			"groupName": "GitHub artifact actions"
 		}
 	],
 	"prConcurrentLimit": 10,

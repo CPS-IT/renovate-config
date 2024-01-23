@@ -4,6 +4,7 @@
 		":separatePatchReleases",
 		":automergePatch",
 		":automergeRequireAllStatusChecks",
+		":rebaseStalePrs",
 		":semanticCommitsDisabled",
 		"config:recommended",
 		"mergeConfidence:all-badges",

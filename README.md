@@ -45,16 +45,16 @@ Consider using more specific presets in your projects since they might be better
 
 | Configuration key                       | Value               | Description                                                                             |
 |-----------------------------------------|---------------------|-----------------------------------------------------------------------------------------|
-| [`:separatePatchReleases`][4]           | _Preset_            | Separate patch and minor releases into separate MRs                                     |
+| [`:separatePatchReleases`][4]           | _Preset_            | Separate patch and minor releases into separate PRs                                     |
 | [`:automergePatch`][14]                 | _Preset_            | Automerge patch upgrades if they pass tests                                             |
 | [`:automergeRequireAllStatusChecks`][5] | _Preset_            | Require successful CI for auto-merge                                                    |
-| [`:rebaseStalePrs`][15]                 | _Preset_            | Rebase MRs if they're behind base branch                                                |
+| [`:rebaseStalePrs`][15]                 | _Preset_            | Rebase PRs if they're behind base branch                                                |
 | [`schedule:weekdays`][6]                | _Preset_            | Schedule one Renovate run per weekday (triggered by renovate/renovate-runner>)          |
 | [`configMigration`][7]                  | `true`              | Enables migration of Renovate config on a repository basis                              |
 | [`lockFileMaintenance`][8]              | `{"enabled": true}` | Enable dependency updates of all locked dependencies, including transitive dependencies |
 | [`osvVulnerabilityAlerts`][9]           | `true`              | Enable vulnerability alerts fetched from https://osv.dev                                |
-| [`prConcurrentLimit`][10]               | `10`                | Limit concurrent MRs to 10                                                              |
-| [`labels`][11]                          | `["dependencies"]`  | Always add `dependencies` label to MRs                                                  |
+| [`prConcurrentLimit`][10]               | `10`                | Limit concurrent PRs to 10                                                              |
+| [`labels`][11]                          | `["dependencies"]`  | Always add `dependencies` label to PRs                                                  |
 
 #### Package rules
 
@@ -87,7 +87,7 @@ Use this preset for Git Flow managed projects.
 
 | Configuration key    | Value           | Description                                                               |
 |----------------------|-----------------|---------------------------------------------------------------------------|
-| [`baseBranches`][12] | `["develop"]`   | Overrides base branch to `develop` (will be used as target branch in MRs) |
+| [`baseBranches`][12] | `["develop"]`   | Overrides base branch to `develop` (will be used as target branch in PRs) |
 
 ### TYPO3 extension preset
 

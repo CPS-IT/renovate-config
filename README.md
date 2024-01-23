@@ -45,10 +45,10 @@ Consider using more specific presets in your projects since they might be better
 
 | Configuration key                       | Value               | Description                                                                             |
 |-----------------------------------------|---------------------|-----------------------------------------------------------------------------------------|
-| [`:separatePatchReleases`][4]           | _Preset_            | Separate patch and minor releases into separate PRs                                     |
 | [`:automergePatch`][14]                 | _Preset_            | Automerge patch upgrades if they pass tests                                             |
 | [`:automergeRequireAllStatusChecks`][5] | _Preset_            | Require successful CI for auto-merge                                                    |
 | [`:rebaseStalePrs`][15]                 | _Preset_            | Rebase PRs if they're behind base branch                                                |
+| [`:separatePatchReleases`][4]           | _Preset_            | Separate patch and minor releases into separate PRs                                     |
 | [`schedule:weekdays`][6]                | _Preset_            | Schedule one Renovate run per weekday (triggered by renovate/renovate-runner>)          |
 | [`configMigration`][7]                  | `true`              | Enables migration of Renovate config on a repository basis                              |
 | [`lockFileMaintenance`][8]              | `{"enabled": true}` | Enable dependency updates of all locked dependencies, including transitive dependencies |

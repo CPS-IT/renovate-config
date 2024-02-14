@@ -25,7 +25,8 @@
 				":disableMajorUpdates",
 				":disableVulnerabilityAlerts"
 			],
-			"fetchReleaseNotes": false
+			"fetchReleaseNotes": false,
+			"osvVulnerabilityAlerts": false
 		}
 	]
 }

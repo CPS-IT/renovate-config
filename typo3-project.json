@@ -9,6 +9,7 @@
 	"lockFileMaintenance": {
 		"automerge": false
 	},
+	"osvVulnerabilityAlerts": false,
 	"rangeStrategy": "in-range-only",
 	"packageRules": [
 		{
@@ -22,11 +23,9 @@
 			"groupName": "TYPO3 CMS",
 			"extends": [
 				":automergeDisabled",
-				":disableMajorUpdates",
-				":disableVulnerabilityAlerts"
+				":disableMajorUpdates"
 			],
-			"fetchReleaseNotes": false,
-			"osvVulnerabilityAlerts": false
+			"fetchReleaseNotes": false
 		}
 	]
 }

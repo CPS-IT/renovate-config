@@ -21,7 +21,8 @@
 			],
 			"groupName": "TYPO3 CMS",
 			"extends": [
-				":disableMajorUpdates"
+				":disableMajorUpdates",
+				":disableVulnerabilityAlerts"
 			],
 			"fetchReleaseNotes": false
 		}

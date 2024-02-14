@@ -21,6 +21,7 @@
 			],
 			"groupName": "TYPO3 CMS",
 			"extends": [
+				":automergeDisabled",
 				":disableMajorUpdates",
 				":disableVulnerabilityAlerts"
 			],

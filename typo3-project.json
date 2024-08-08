@@ -13,19 +13,17 @@
 	"rangeStrategy": "in-range-only",
 	"packageRules": [
 		{
-			"matchPackagePrefixes": [
-				"typo3/cms-"
-			],
-			"excludePackageNames": [
-				"typo3/cms-cli",
-				"typo3/cms-composer-installers"
+			"matchPackageNames": [
+				"typo3/cms-**",
+				"!typo3/cms-cli",
+				"!typo3/cms-composer-installers"
 			],
 			"groupName": "TYPO3 CMS",
 			"extends": [
 				":automergeDisabled",
 				":disableMajorUpdates"
 			],
-			"fetchReleaseNotes": false
+			"fetchChangeLogs": "off"
 		}
 	]
 }

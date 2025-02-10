@@ -42,14 +42,14 @@
 			"automerge": true
 		},
 		{
+			"groupName": "PHPStan",
 			"matchPackageNames": [
 				"phpstan/**"
 			],
 			"matchDepNames": [
 				"jangregor/phpstan-prophecy",
 				"saschaegerer/phpstan-typo3"
-			],
-			"groupName": "PHPStan"
+			]
 		},
 		{
 			"extends": [
@@ -62,11 +62,33 @@
 			"rangeStrategy": "widen"
 		},
 		{
+			"groupName": "GitHub artifact actions",
 			"matchDepNames": [
 				"actions/download-artifact",
 				"actions/upload-artifact"
+			]
+		},
+		{
+			"groupName": "PHPUnit",
+			"description": "Group PHPUnit packages",
+			"matchDatasources": [
+				"packagist"
 			],
-			"groupName": "GitHub artifact actions"
+			"matchPackageNames": [
+				"phpunit/**",
+				"sebastian/**"
+			]
+		},
+		{
+			"groupName": "Rector packages",
+			"description": "Group Rector packages",
+			"matchDatasources": [
+				"packagist"
+			],
+			"matchPackageNames": [
+				"rector/**",
+				"ssch/typo3-rector"
+			]
 		}
 	],
 	"prConcurrentLimit": 10,

@@ -16,6 +16,14 @@
 			],
 			"groupName": "TYPO3 CMS",
 			"fetchChangeLogs": "off"
+		},
+		{
+			"extends": [
+				":disableRenovate"
+			],
+			"matchFileNames": [
+				"Tests/Functional/Fixtures/**"
+			]
 		}
 	]
 }

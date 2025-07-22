@@ -1,6 +1,7 @@
 services:
   validate:
     image: renovate/renovate
+    pull_policy: always
     command:
       - 'renovate-config-validator'
       - '--strict'

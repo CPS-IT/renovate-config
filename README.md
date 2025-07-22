@@ -85,9 +85,9 @@ Use this preset for Git Flow managed projects.
 
 #### Key configuration
 
-| Configuration key    | Value           | Description                                                               |
-|----------------------|-----------------|---------------------------------------------------------------------------|
-| [`baseBranches`][12] | `["develop"]`   | Overrides base branch to `develop` (will be used as target branch in PRs) |
+| Configuration key          | Value           | Description                                                               |
+|----------------------------|-----------------|---------------------------------------------------------------------------|
+| [`baseBranchPatterns`][12] | `["develop"]`   | Overrides base branch to `develop` (will be used as target branch in PRs) |
 
 ### GitLab CI only preset
 
@@ -193,7 +193,7 @@ This project is licensed under [GNU General Public License 3.0 (or later)](LICEN
 [9]: https://docs.renovatebot.com/configuration-options/#osvvulnerabilityalerts
 [10]: https://docs.renovatebot.com/configuration-options/#prconcurrentlimit
 [11]: https://docs.renovatebot.com/configuration-options/#labels
-[12]: https://docs.renovatebot.com/configuration-options/#basebranches
+[12]: https://docs.renovatebot.com/configuration-options/#basebranchpatterns
 [13]: https://docs.renovatebot.com/configuration-options/#rangestrategy
 [14]: https://docs.renovatebot.com/presets-default/#automergepatch
 [15]: https://docs.renovatebot.com/presets-default/#rebasestaleprs

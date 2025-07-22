@@ -7,6 +7,7 @@ services:
       - '--strict'
       - 'default.json'
       - 'git-flow.json'
+      - 'gitlab-ci-only.json'
       - 'typo3-extension.json'
       - 'typo3-project.json'
     volumes:

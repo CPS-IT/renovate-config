@@ -20,6 +20,7 @@ body:
       options:
         - label: default
         - label: git-flow
+        - label: gitlab-ci-only
         - label: typo3-extension
         - label: typo3-project
   - type: input

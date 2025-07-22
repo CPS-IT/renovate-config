@@ -89,6 +89,24 @@ Use this preset for Git Flow managed projects.
 |----------------------|-----------------|---------------------------------------------------------------------------|
 | [`baseBranches`][12] | `["develop"]`   | Overrides base branch to `develop` (will be used as target branch in PRs) |
 
+### GitLab CI only preset
+
+💻 Config file: [`gitlab-ci-only.json`](gitlab-ci-only.json)\
+➡️ Reference: `github>CPS-IT/renovate-config:gitlab-ci-only`
+
+#### Usage
+
+```json
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["github>CPS-IT/renovate-config:gitlab-ci-only"]
+}
+```
+
+#### Description
+
+Use this preset to enable updates in GitLab CI files only.
+
 ### TYPO3 extension preset
 
 💻 Config file: [`typo3-extension.json`](typo3-extension.json)\

@@ -24,6 +24,12 @@
 				":disableMajorUpdates"
 			],
 			"fetchChangeLogs": "off"
+		},
+		{
+			"matchManagers": [
+				"gitlabci-include"
+			],
+			"rangeStrategy": "auto"
 		}
 	]
 }

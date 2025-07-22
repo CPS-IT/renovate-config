@@ -3,18 +3,8 @@
 	"description": [
 		"Use this preset to enable updates in GitLab CI files only."
 	],
-	"extends": [
-		":disableRenovate"
-	],
-	"packageRules": [
-		{
-			"matchManagers": [
-				"gitlabci",
-				"gitlabci-include"
-			],
-			"extends": [
-				":enableRenovate"
-			]
-		}
+	"enabledManagers": [
+		"gitlabci",
+		"gitlabci-include"
 	]
 }

@@ -4,7 +4,8 @@
 		"Use this preset for TYPO3 projects (bundles)."
 	],
 	"composerIgnorePlatformReqs": [
-		"ext-intl"
+		"ext-intl",
+		"ext-sodium"
 	],
 	"lockFileMaintenance": {
 		"automerge": false

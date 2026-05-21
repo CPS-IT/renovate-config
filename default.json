@@ -89,6 +89,21 @@
 				"rector/**",
 				"ssch/typo3-rector"
 			]
+		},
+		{
+			"matchManagers": [
+				"github-actions"
+			],
+			"pinDigests": true
+		},
+		{
+			"matchDepNames": [
+				"ramsey/composer-install"
+			],
+			"matchDepTypes": [
+				"action"
+			],
+			"overrideDatasource": "github-digest"
 		}
 	],
 	"prConcurrentLimit": 10,

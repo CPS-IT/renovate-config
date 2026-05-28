@@ -5,6 +5,7 @@
 	],
 	"composerIgnorePlatformReqs": [
 		"ext-intl",
+		"ext-redis",
 		"ext-sodium"
 	],
 	"lockFileMaintenance": {

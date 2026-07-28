@@ -80,7 +80,7 @@
 			]
 		},
 		{
-			"groupName": "Rector packages",
+			"groupName": "Rector",
 			"description": "Group Rector packages",
 			"matchDatasources": [
 				"packagist"
@@ -88,6 +88,16 @@
 			"matchPackageNames": [
 				"rector/**",
 				"ssch/typo3-rector"
+			]
+		},
+		{
+			"groupName": "Guzzle",
+			"description": "Group Guzzle packages",
+			"matchDatasources": [
+				"packagist"
+			],
+			"matchPackageNames": [
+				"guzzlehttp/**"
 			]
 		},
 		{

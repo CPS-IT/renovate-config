@@ -143,6 +143,17 @@
 				"!typo3/cms-composer-installers"
 			],
 			"sourceUrl": "https://github.com/TYPO3/typo3"
+		},
+		{
+			"matchDatasources": [
+				"packagist"
+			],
+			"matchPackageNames": [
+				"!cps/**",
+				"!cpsit/**",
+				"!fr/**"
+			],
+			"minimumReleaseAge": "3 days"
 		}
 	],
 	"prConcurrentLimit": 10,
